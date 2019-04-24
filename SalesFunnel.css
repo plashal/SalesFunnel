@@ -1,0 +1,110 @@
+/* CSS */
+.leftp { grid-area: leftp; }
+.high { grid-area: high; }
+.low { grid-area: low; }
+.rightp { grid-area: rightp; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'leftp high rightp'
+    'leftp low rightp';
+	 grid-template-columns:  20px auto 20px;
+  background-color: rgb(255,255,255);
+  padding: 10px; 
+  background-size: contain;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  padding: 0px;
+  font-size: 30px;
+  text-align: center; 
+}
+.kpi-widget .inner { 
+	width:10%;
+	height:10%;
+}
+
+.kpi-widget[max-width~="300px"] .inner { 
+	width:25%; 
+}
+
+.chev .inner { 
+	width:100%; 
+}
+
+
+@barColor: #5f5f5f;
+.row {
+	transition: all 0.3s ease;
+	float: left;
+	width: 98%;
+	overflow: hidden;
+	border: 1px solid #ccc;
+	background-color: rgb(228,106,123);
+	margin-bottom: 2px;
+	border-radius: 0px 0px 0px 0px;
+	-moz-border-radius: 0px 5px 5px 0px;
+}
+.bar {
+	float: left;
+	clear: left;
+	height: 15px;
+	background-color: rgb(155,223,144);
+}
+.bar span {
+	font-weight: bold;
+	float: left;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-top: 0px;
+	color: #f0f0f0;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	width: 90%;
+	white-space: nowrap;
+}
+.per {
+	position: relative;
+}
+.per span {
+	font-weight: bold;
+	float: left;
+	margin-right: 5px;
+	margin-top: 5px;
+	margin-left: 5px;
+}
+.per span.over {
+	position: absolute;
+	right: 15px;
+	color: #f0f0f0;
+}
+
+
+
+.qv-object-a_smallTextTable div.qv-object-content-container {
+	overflow: auto;
+	font-size: 5px;
+}
+.qv-object-a_smallTextTable td,
+.qv-object-a_smallTextTable th {
+	border-top: 0px solid #fff;
+	border-bottom: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	vertical-align: middle;
+	cursor: default;
+	font-size: 5px;
+}
+.qv-object-a_smallTextTable td.numeric {
+	text-align: right;
+	font-size: 5px;
+}
+.qv-object-a_smallTextTable button {
+	width: 100%;
+	font-size: 5px;
+}
